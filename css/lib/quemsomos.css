@@ -35,7 +35,7 @@ main{
 
 P{
 color: #FFFFFF;
-text-align: center;
+text-align: justify;
 font-size: 19px;
 margin: 10px;
 }
@@ -46,6 +46,16 @@ margin: 10px;
   grid-template-areas:
     "small1 large"
     "small2 large";
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.image-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "large small1"
+    "large small2";
   gap: 1rem;
   padding: 2rem;
 }
@@ -67,8 +77,11 @@ margin: 10px;
   object-fit: cover;
   border-radius: 10px;
 }
+.objetivos{
+  list-style-type: disc;
+  color: #FFFFFF;
 
-
+}
 ul {
   list-style-type: none;
   margin: 0;
